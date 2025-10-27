@@ -1,0 +1,65 @@
+.
+├── app
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout copy.tsx
+│   ├── layout.tsx
+│   ├── page copy.tsx
+│   ├── page.tsx
+│   ├── projects
+│   │   ├── page.tsx
+│   │   └── [slug]
+│   │       └── page.tsx
+│   └── research
+│       ├── page.tsx
+│       └── [slug]
+│           └── page.tsx
+├── complete_project.txt
+├── components
+│   ├── ExperienceCard.tsx
+│   ├── ExperienceGrid.tsx
+│   ├── Header.tsx
+│   ├── PageContainer.tsx
+│   ├── ProjectCard.tsx
+│   ├── ProjectsGrid.tsx
+│   ├── ResearchCard.tsx
+│   ├── ResearchGrid.tsx
+│   ├── Section.tsx
+│   ├── SmoothScroll.tsx
+│   └── Tag.tsx
+├── data
+│   ├── blog.ts
+│   ├── experience.ts
+│   ├── projects.ts
+│   └── research.ts
+├── eslint.config.mjs
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── project_contents.txt
+├── project-struct.txt
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── images
+│   │   ├── chatbot-rozetsky.jpg
+│   │   ├── google-deepmind-dna.jpg
+│   │   ├── gt-emory.jpg
+│   │   ├── hero-leonardo-iribe.jpg
+│   │   ├── hub.png
+│   │   ├── marco-bianchetti-RL.jpg
+│   │   ├── marcos-sarmento-upliftt.jpg
+│   │   ├── mika-wegelius-soccer.jpg
+│   │   ├── piret-ilver-benchmark.jpg
+│   │   ├── portfolio.jpg
+│   │   ├── tecpen.jpeg
+│   │   └── ualr.jpg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── README.md
+└── tsconfig.json
+
+10 directories, 53 files

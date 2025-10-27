@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Base color tokens via CSS variables */
+/* Light tokens (fallback) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,37 +8,26 @@
   --border: rgba(24,24,27,0.12);
 }
 
-/* Map vars to Tailwind (v4) design tokens */
+/* ✅ Dark tokens: apply when <html class="dark"> */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --muted: #111111;
+  --border: rgba(255,255,255,0.1);
+}
+
+/* Map to Tailwind tokens */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-border: var(--border);
-
-  /* Fonts are set via next/font and injected as CSS variables/classes.
-     If you use next/font, set:
-       --font-sans: var(--font-sans);
-       --font-mono: var(--font-mono);
-     See layout.tsx below.
-  */
 }
 
-/* Dark scheme */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --muted: #111;
-    --border: rgba(255,255,255,0.1);
-  }
-}
-
-/* Minimal resets & helpers */
 * { box-sizing: border-box; }
-html, body { height: 100%; scroll-behavior: auto; } /* Lenis will handle smooth scroll */
+html, body { height: 100%; scroll-behavior: auto; }
 ::selection { background: rgba(255,255,255,0.15); }
 
-/* Remove hard-coded font family so next/font can take over */
 body {
   background: var(--background);
   color: var(--foreground);

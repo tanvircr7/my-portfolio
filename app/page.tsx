@@ -81,7 +81,7 @@ export default function HomePage() {
                     text-foreground/70 hover:text-foreground hover:bg-background/80"
           aria-label="Photo credit on Unsplash (opens in a new tab)"
         >
-          Photo: <span className="underline underline-offset-2">Unsplash</span>
+          Photo: <span className="underline underline-offset-2">Leonardo Iribe</span>
         </a>
 
 

@@ -1,12 +1,22 @@
+// app/projects/[slug]/page.tsx
 import PageContainer from '@/components/PageContainer'
 import { projects } from '@/data/projects'
 import Image from 'next/image'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
+import ContentSection from '@/components/ContentSection'
+import { projectContent } from '@/content'
 
-export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
   const { slug } = await params
   const project = projects.find(p => p.slug === slug)
-  if (!project) return <PageContainer>Project not found.</PageContainer>
+  if (!project) notFound()
+
+  const Content = projectContent[slug]
 
   return (
     <PageContainer>
@@ -23,9 +33,17 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <div className="mt-8 flex flex-wrap gap-2 text-xs text-foreground/60">
         {project.tags.map(t => (
-          <span key={t} className="px-2 py-0.5 rounded-full border border-border">{t}</span>
+          <span key={t} className="px-2 py-0.5 rounded-full border border-border">
+            {t}
+          </span>
         ))}
       </div>
+
+      {Content && (
+        <ContentSection>
+          <Content />
+        </ContentSection>
+      )}
     </PageContainer>
   )
 }

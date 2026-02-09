@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import type { Project } from '@/data/projects'
 import Tag from './Tag'
 
-
 export default function ProjectCard({ p }: { p: Project }) {
   return (
     <motion.div
@@ -14,7 +13,7 @@ export default function ProjectCard({ p }: { p: Project }) {
       transition={{ type: 'spring', stiffness: 320, damping: 24 }}
       className="group rounded-2xl overflow-hidden border border-border bg-background/60 backdrop-blur-sm"
     >
-      <Link href={p.href} className="block">
+      <Link href={`/projects/${p.slug}`} className="block">  {/* ← changed */}
         <div className="aspect-[16/10] relative">
           <Image
             src={p.image}

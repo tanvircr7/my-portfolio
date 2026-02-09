@@ -23,7 +23,7 @@ export const experience: Experience[] = [
     period: '2025 — Present',
     href: '#',
     image: '/images/gt-emory.jpg',
-    tags: ['Python', 'LLMs', 'AI4Science'],
+    tags: ['Python', 'LLMs', 'Computer Vision', 'AI4Science'],
   },
   {
     company: 'Tecpen',

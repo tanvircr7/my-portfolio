@@ -10,12 +10,12 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    company: 'UALR Graduate School',
-    role: 'Graduate Assistant',
-    period: '2024 — Present',
+    company: 'UALR Tech Launch',
+    role: 'AI Engineer',
+    period: 'Summer 2025',
     href: '#',
     image: '/images/ualr.jpg',
-    tags: ['MSCS', 'Trojan'],
+    tags: ['UALR Chatbot', 'RAG', 'AI Product'],
   },
   {
     company: 'Georgia Tech & Emory University',
@@ -24,6 +24,14 @@ export const experience: Experience[] = [
     href: '#',
     image: '/images/gt-emory.jpg',
     tags: ['Python', 'LLMs', 'Computer Vision', 'AI4Science'],
+  },
+  {
+    company: 'UALR Graduate School',
+    role: 'Graduate Assistant',
+    period: '2024 — Present',
+    href: '#',
+    image: '/images/ualr.jpg',
+    tags: ['MSCS', 'Trojan'],
   },
   {
     company: 'Tecpen',

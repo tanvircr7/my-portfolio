@@ -3,10 +3,10 @@ export default function UALRChatbotContent() {
   return (
     <>
       <p className="text-slate-700 dark:text-slate-300 italic">
-        UALR Chatbot – or as I like to call it, “How I Learned to Stop Worrying and Love the Garbage.”
+        UALR Chatbot – How data engineering and careful curation is the most boring and successful lever.”
       </p>
 
-      <h3 className="mt-5 mb-2 text-lg font-semibold text-indigo-700 dark:text-indigo-400">
+      <h3 className="mt-5 mb-2 text-lg font-semibold text-sky-700 dark:text-sky-400">
         The Dispatch
       </h3>
       <p className="text-slate-800 dark:text-slate-200">
@@ -15,7 +15,7 @@ export default function UALRChatbotContent() {
         My mission: diagnose the issues, implement solutions, and get that accuracy soaring above 80%-ish.
       </p>
 
-      <h3 className="mt-5 mb-2 text-lg font-semibold text-rose-700 dark:text-rose-400">
+      <h3 className="mt-5 mb-2 text-lg font-semibold text-sky-700 dark:text-sky-400">
         Garbage In, Garbage Out—Shocking, I Know
       </h3>
       <p className="text-slate-800 dark:text-slate-200">
@@ -25,8 +25,8 @@ export default function UALRChatbotContent() {
         applied regex-based content filters, and re-indexed the corpus, reducing irrelevant tokens by 50%.
       </p>
 
-      <h3 className="mt-5 mb-2 text-lg font-semibold text-emerald-700 dark:text-emerald-400">
-        Chunking: Not Just for Guacamole
+      <h3 className="mt-5 mb-2 text-lg font-semibold text-sky-700 dark:text-sky-400">
+        Chunking
       </h3>
       <p className="text-slate-800 dark:text-slate-200">
         Next pathology: chunk salad. The existing segmentation strategy produced atomic passages devoid of

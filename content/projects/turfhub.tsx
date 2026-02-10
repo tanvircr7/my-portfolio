@@ -1,38 +1,34 @@
-// content/projects/ualr-chatbot.tsx
-export default function UALRChatbotContent() {
+// content/projects/turfhub.tsx
+export default function TurfHubContent() {
   return (
     <>
-      <p>
-        UALR Chatbot – or as I like to call it, “How I Learned to Stop Worrying and Love the Garbage.”
+      <p className="text-sky-600 dark:text-sky-400 italic">
+        TurfHub — because coordinating a 5-a-side match shouldn't feel like a distributed consensus problem.
       </p>
 
-      <h3 className="mt-4 mb-2 text-lg font-semibold">The Dispatch</h3>
-      <p>
-        Marla Johnson recruited me to rescue me for the role to work as a technical lead on UALR's chatbot project.
-        The bot was supposed to help prospective students navigate UALR's sprawling website. Going into this,
-        My mission was: diagnose the bot's ailments, prescribe fixes, and get it to pass the Turing test (or at least
-        not sound like it failed anatomy).
+      <h3 className="mt-5 mb-2 text-lg font-semibold text-sky-700 dark:text-sky-400">
+        The Booking Bottleneck
+      </h3>
+      <p className="text-slate-800 dark:text-slate-200">
+        At Tecpen, I was tasked with engineering the core logic for TurfHub, a React-based 
+        booking engine. The challenge wasn't just UI; it was maintaining <strong>data consistency</strong> across high-concurrency booking, payment, and authentication states without dropping a single packet.
       </p>
 
-      <h3 className="mt-4 mb-2 text-lg font-semibold">Garbage In, Garbage Out—Shocking, I Know</h3>
-      <p>
-        First incision: the data. Turns out we were force-feeding the poor thing undergraduate brochures
-        while promising it grad-student caviar. I built a new scraper that pulled only graduate-level pages,
-        filtered out the noise, and fed the bot a diet it could actually digest.
+      <h3 className="mt-5 mb-2 text-lg font-semibold text-sky-700 dark:text-sky-400">
+        Engineered Reliability
+      </h3>
+      <p className="text-slate-800 dark:text-slate-200">
+        I built structured data pipelines that bridged the gap between the frontend state and 
+        database integrity. By optimizing the interaction between the booking workflows and 
+        backend reporting, we ensured that "double-booking" remained a theoretical impossibility rather 
+        than a production bug.
       </p>
 
-      <h3 className="mt-4 mb-2 text-lg font-semibold">Chunking: Not Just for Guacamole</h3>
-      <p>
-        Next pathology: chunk salad. Vectors were sliced so thin they carried zero context.
-        We manually reorganized and annotated the sections so each chunk arrived with enough surrounding sense
-        to answer a question without sounding like it woke up in the middle of someone else’s lecture.
-      </p>
-
-      <ul className="list-disc pl-6 mt-3 space-y-1 text-sm">
-        <li>Diagnosed data ingestion pipeline; evicted undergrad noise.</li>
-        <li>Built grad-student-only scraper—think VIP list, but for knowledge.</li>
-        <li>Redesigned chunking & annotation schema; context no longer MIA.</li>
-        <li>Shipped a bot that finally answers questions without sounding like it skipped med school.</li>
+      <ul className="list-disc pl-6 mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+        <li>Architected booking & payment workflows with 100% data consistency.</li>
+        <li>Implemented secure authentication layers to guard operational data.</li>
+        <li>Synchronized backend monitoring tools to track real-time turf availability.</li>
+        <li>Shipped a streamlined React stack that scaled from local pitches to city-wide leagues.</li>
       </ul>
     </>
   );
